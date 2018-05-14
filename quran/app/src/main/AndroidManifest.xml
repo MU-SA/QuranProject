@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gt.quraan">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo2"
+        android:label="الدورى"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,icon,theme,label,supportsRtl">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Index"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Slider"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Last_read"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dory_infoo"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".GoToIndex"
+            android:noHistory="true"/>
+
+        <activity
+            android:name=".ReadByNumber"
+            android:noHistory="true">
+
+        </activity>
+    </application>
+
+</manifest>
